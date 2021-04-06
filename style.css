@@ -194,7 +194,7 @@ body {
     overflow: auto;
 }
 
-.users-list::-webkit-scrollbar {
+:is(.users-list, .chat-box)::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -225,4 +225,113 @@ body {
 /* Vamos usar este estilo no PHP - back-end */
 .users-list a .status-dot.offline {
     color: #ccc;
+}
+
+/* Pagina de chat */
+
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+.chat-area header .back-icon {
+    font-size: 18px;
+    color: #333;
+}
+
+.chat-area header img {
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-box {
+    height: 500px;
+    overflow-y: auto;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 10%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 10%);
+}
+
+.chat-box .chat {
+    margin: 15px;
+}
+
+.chat-box .chat p {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.chat-box .outgoing {
+    display: flex;
+}
+
+.chat-box .outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+.chat-box .outgoing .details p {
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+
+.chat-box .incoming {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-box .incoming img {
+    height: 35px;
+    width: 35px;
+}
+
+.chat-box .incoming .details {
+    margin: 10px;
+}
+
+.chat-box .incoming .details p {
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+    margin-right: auto;
+    max-width: calc(100% - 100px);
+}
+
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-area .typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.chat-area .typing-area button {
+    width: 55px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
 }
