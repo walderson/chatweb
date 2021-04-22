@@ -20,7 +20,7 @@
                 </div>
                 <div class="field input">
                     <label>Senha</label>
-                    <input type="text" placeholder="Informe sua senha">
+                    <input type="password" placeholder="Informe sua senha">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
@@ -30,5 +30,7 @@
             <div class="link">Não está cadastrado? <a href="#">Cadastrar agora</a></div>
         </section>
     </div>
+
+    <script src="js/pass-show-hide.js"></script>
 </body>
 </html>
