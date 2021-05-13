@@ -40,7 +40,7 @@
                     <input type="submit" value="Continuar para o chat">
                 </div>
             </form>
-            <div class="link">Já está cadastrado? <a href="#">Entrar agora</a></div>
+            <div class="link">Já está cadastrado? <a href="login.php">Entrar agora</a></div>
         </section>
     </div>
 
