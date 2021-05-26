@@ -1,10 +1,10 @@
-<?php include_once "head.php" ?>
 <?php
     session_start();
     if (!isset($_SESSION['unique_id'])) {
         header('location: login.php');
     }
 ?>
+<?php include_once "head.php" ?>
 <body>
     <div class="wrapper">
         <section class="users">

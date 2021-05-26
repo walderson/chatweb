@@ -303,7 +303,7 @@ body {
 
 .chat-box .outgoing .details {
     margin-left: auto;
-    max-width: calc(100% - 130px);
+    max-width: calc(100% - 80px);
 }
 
 .chat-box .outgoing .details p {
@@ -324,6 +324,7 @@ body {
 
 .chat-box .incoming .details {
     margin: 10px;
+    max-width: calc(100% - 100px);
 }
 
 .chat-box .incoming .details p {
@@ -331,7 +332,6 @@ body {
     color: #333;
     border-radius: 18px 18px 18px 0;
     margin-right: auto;
-    max-width: calc(100% - 100px);
 }
 
 .chat-area .typing-area {
