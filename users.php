@@ -24,7 +24,7 @@
                         <p><?php echo $row['status']; ?></p>
                     </div>
                 </div>
-                <a href="#" class="logout">Sair</a>
+                <a href="php\logout.php" class="logout">Sair</a>
             </header>
             <div class="search">
                 <span class="text">Selecione usuário para iniciar chat</span>
